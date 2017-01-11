@@ -8,6 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
+@class TableContainerView;
+typedef CGFloat(^WidthBlock)(NSIndexPath *indexPath);
+typedef TableContainerView *(^Width)(WidthBlock widthBlock);
+
 @interface TableContainerView : UIView
+
+@property (nonatomic, copy) Width rowWidth;
+
+@property (nonatomic, copy) Width headerWidth;
+
+@property (nonatomic, copy) Width footerWidth;
+
 
 @end

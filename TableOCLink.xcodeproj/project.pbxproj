@@ -15,6 +15,8 @@
 		8156FE521E2680C50022AD5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8156FE501E2680C50022AD5E /* LaunchScreen.storyboard */; };
 		8156FE5D1E2680C50022AD5E /* TableOCLinkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8156FE5C1E2680C50022AD5E /* TableOCLinkTests.m */; };
 		8156FE681E2680C50022AD5E /* TableOCLinkUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8156FE671E2680C50022AD5E /* TableOCLinkUITests.m */; };
+		8156FE771E2680F30022AD5E /* TableContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8156FE761E2680F30022AD5E /* TableContainerView.m */; };
+		8156FE791E2680FC0022AD5E /* TableContainerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8156FE781E2680FC0022AD5E /* TableContainerView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		8156FE631E2680C50022AD5E /* TableOCLinkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableOCLinkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8156FE671E2680C50022AD5E /* TableOCLinkUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableOCLinkUITests.m; sourceTree = "<group>"; };
 		8156FE691E2680C50022AD5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8156FE751E2680F30022AD5E /* TableContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableContainerView.h; sourceTree = "<group>"; };
+		8156FE761E2680F30022AD5E /* TableContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableContainerView.m; sourceTree = "<group>"; };
+		8156FE781E2680FC0022AD5E /* TableContainerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableContainerView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +110,9 @@
 				8156FE461E2680C50022AD5E /* AppDelegate.m */,
 				8156FE481E2680C50022AD5E /* ViewController.h */,
 				8156FE491E2680C50022AD5E /* ViewController.m */,
+				8156FE751E2680F30022AD5E /* TableContainerView.h */,
+				8156FE761E2680F30022AD5E /* TableContainerView.m */,
+				8156FE781E2680FC0022AD5E /* TableContainerView.xib */,
 				8156FE4B1E2680C50022AD5E /* Main.storyboard */,
 				8156FE4E1E2680C50022AD5E /* Assets.xcassets */,
 				8156FE501E2680C50022AD5E /* LaunchScreen.storyboard */,
@@ -247,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8156FE521E2680C50022AD5E /* LaunchScreen.storyboard in Resources */,
+				8156FE791E2680FC0022AD5E /* TableContainerView.xib in Resources */,
 				8156FE4F1E2680C50022AD5E /* Assets.xcassets in Resources */,
 				8156FE4D1E2680C50022AD5E /* Main.storyboard in Resources */,
 			);
@@ -274,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8156FE4A1E2680C50022AD5E /* ViewController.m in Sources */,
+				8156FE771E2680F30022AD5E /* TableContainerView.m in Sources */,
 				8156FE471E2680C50022AD5E /* AppDelegate.m in Sources */,
 				8156FE441E2680C50022AD5E /* main.m in Sources */,
 			);

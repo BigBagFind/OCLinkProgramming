@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "TableContainerView.h"
 
 @interface ViewController ()
 
@@ -16,14 +17,32 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    TableContainerView *view = [[[NSBundle mainBundle] loadNibNamed:@"TableContainerView" owner:self options:nil] lastObject];
+    view.frame = self.view.bounds;
+    [self.view addSubview:view];
+    
+    
+    // widthOfRowMapper
+    view.rowWidth(^CGFloat (NSIndexPath *indexPath) {
+        if (indexPath.row %2 == 0) {
+            return 44;
+        }
+        return 22;
+    }).headerWidth(^CGFloat (NSIndexPath *indexPath) {
+        if (indexPath.section %2 == 0) {
+            return 44;
+        }
+        return 44;
+    }).headerWidth(^CGFloat (NSIndexPath *indexPath) {
+        return 44;
+    });
+        
+   
+    
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
 
 
 @end
