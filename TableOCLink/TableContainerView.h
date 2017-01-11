@@ -13,12 +13,20 @@ typedef CGFloat(^WidthBlock)(NSIndexPath *indexPath);
 typedef TableContainerView *(^Width)(WidthBlock widthBlock);
 
 @interface TableContainerView : UIView
+// widthOfRowMapper
+//@property (nonatomic, copy) Width rowWidth;
+// widthOfRowMapper
+@property (nonatomic, copy, readonly) Width headerWidth;
+// widthOfRowMapper
+@property (nonatomic, copy, readonly) Width footerWidth;
 
-@property (nonatomic, copy) Width rowWidth;
++ (TableContainerView* (^)())table;
 
-@property (nonatomic, copy) Width headerWidth;
+// =set 
+- (Width)rowWidth;
 
-@property (nonatomic, copy) Width footerWidth;
+
+//@property (nonatomic, copy) TableContainerView *(^age)(CGFloat age);
 
 
 @end

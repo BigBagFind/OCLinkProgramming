@@ -24,6 +24,13 @@
 
 @implementation TableContainerView
 
++ (TableContainerView* (^)())table {
+    return ^TableContainerView *() {
+        TableContainerView *view = [[[NSBundle mainBundle] loadNibNamed:@"TableContainerView" owner:self options:nil] lastObject];
+        view.frame = [[UIScreen mainScreen] bounds];
+        return view;
+    };
+}
 
 
 - (Width)rowWidth {

@@ -17,13 +17,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    TableContainerView *view = [[[NSBundle mainBundle] loadNibNamed:@"TableContainerView" owner:self options:nil] lastObject];
-    view.frame = self.view.bounds;
-    [self.view addSubview:view];
     
-    
-    // widthOfRowMapper
-    view.rowWidth(^CGFloat (NSIndexPath *indexPath) {
+    TableContainerView *view = TableContainerView.table().rowWidth(^CGFloat (NSIndexPath *indexPath) {
         if (indexPath.row %2 == 0) {
             return 44;
         }
@@ -36,6 +31,12 @@
     }).headerWidth(^CGFloat (NSIndexPath *indexPath) {
         return 44;
     });
+    
+    
+    [self.view addSubview:view];
+    
+    
+   
         
    
     
